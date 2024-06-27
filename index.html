@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Right Resume</title>
+  <title alt="Pedro Poole CV">CV Pedro Poole</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
@@ -23,11 +23,27 @@
   <noscript>
     <style type="text/css">
       [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
+        transform: translate(0) scale(1);
+        transition: opacity 1s;
       }
+
+      
+
+
     </style>
   </noscript>
+  <style>
+    h1,h2,h3,h4,h5,div,p
+        {
+        transition: opacity 1s;
+      }
+      .fade-out {
+        opacity: 0;
+      }
+      .fade-in {
+        opacity: 1;
+      }
+  </style>
 </head>
 
 <body id="top">
@@ -46,12 +62,13 @@
               <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">
                 Pedro Poole Prieto
               </h2>
-              <p data-aos="fade-left" data-aos-delay="100">
+              <p data-aos="fade-left" data-aos-delay="100" alt="Developer">
                 Desarrollador web
               </p>
               <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
                 <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="Pedro Poole CV.pdf"
                   target="_blank">Descargar PDF</a>
+                  <a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()">Cambiar Idioma</a>
               </div>
             </div>
           </div>
@@ -59,36 +76,31 @@
         <div class="about-section pt-4 px-3 px-lg-4 mt-1">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="h3 mb-3">Sobre mi</h2>
-              <p>
-                Soy un programador con particular interés en el area de DevOps, en la que estoy trabajando.
-                Tengo
-                una excelente capacidad de redacción tanto en Inglés como en Español, y estoy familiarizado con los
-                conceptos y principios de las empresas y el márketing.
-                Además del grado que he cursado, tengo experiencia adicional en otras áreas informáticas, como la
-                creación de sitios web y, en general, mucha práctica con diversas herramientas digitales.
+              <h2 class="h3 mb-3" alt="About me">Sobre mi</h2>
+              <p alt="I am a developer with a particular interest in the DevOps area, in which I am working. I have excellent writing skills in both English and Spanish, and I am familiar with business and marketing concepts and principles. In addition to the degree I have completed, I have additional experience in other IT areas, such as website creation, and generally a lot of practice with various digital tools.">
+                Soy un programador con particular interés en el area de DevOps, en la que estoy trabajando. Tengo una excelente capacidad de redacción tanto en Inglés como en Español, y estoy familiarizado con los conceptos y principios de las empresas y el márketing. Además del grado que he cursado, tengo experiencia adicional en otras áreas informáticas, como la creación de sitios web y, en general, mucha práctica con diversas herramientas digitales.
               </p>
             </div>
             <div class="col-md-5 offset-md-1">
-              <h2 class="h3 mb-3">Datos personales</h2>
+              <h2 class="h3 mb-3" alt="Personal details">Datos personales</h2>
               <div class="row mt-2">
                 <div class="col-sm-4">
-                  <div class="pb-1">Edad</div>
+                  <div class="pb-1" alt="Age">Edad</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">30</div>
+                  <div class="pb-1 text-secondary" alt="30">30</div>
                 </div>
                 <div class="col-sm-4">
-                  <div class="pb-1">Email</div>
+                  <div class="pb-1" alt="Email">Email</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">pedropoolep@gmail.com</div>
+                  <div class="pb-1 text-secondary" alt="pedropoolep@gmail.com">pedropoolep@gmail.com</div>
                 </div>
                 <div class="col-sm-4">
-                  <div class="pb-1">Teléfono</div>
+                  <div class="pb-1" alt="Telephone">Teléfono</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">+34 622 627 305</div>
+                  <div class="pb-1 text-secondary" alt="+34 622 627 305">622 627 305</div>
                 </div>
 
 
@@ -100,24 +112,21 @@
 
         <hr class="d-print-none" />
         <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4">Experiencia laboral</h2>
+          <h2 class="h3 mb-4" alt="Work experience">Experiencia laboral</h2>
           <div class="timeline">
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="DevOps platform support">
                   Soporte DevOpsde la Platform.
-                  <span class="text-muted h6">NTT Data, Sevilla</span>
+                  <span class="text-muted h6" alt="NTT Data, Seville">NTT Data, Sevilla</span>
 
                 </div>
-                <div class="text-muted text-small mb-2">
+                <div class="text-muted text-small mb-2" alt="2022-Today">
                   2022-Actualidad
                 </div>
-                <div>
-                  Como junior en DevOps, mi trabajo se centra en la gestión de la infraestructura
-                  de las aplicaciones de una gran empresa multinacional.
-                  Opero a diario con tecnologías como Kubernetes, Docker, Kibana, bases de datos
-                  y todo el entorno de microservicios de Java Spring.
+                <div alt="As a developer in DevOps, my work focuses on managing the infrastructure of a large multinational company's applications. I work daily with technologies such as Kubernetes, Docker, Kibana, databases, and the entire Java Spring microservices environment.">
+                  Como developer en DevOps, mi trabajo se centra en la gestión de la infraestructura de las aplicaciones de una gran empresa multinacional. Opero a diario con tecnologías como Kubernetes, Docker, Kibana, bases de datos y todo el entorno de microservicios de Java Spring.
                 </div>
               </div>
             </div>
@@ -127,7 +136,7 @@
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Digital marketing consultant">
                   Consultor de márketing digital.
                   <span class="text-muted h6">Host-Ed Ltd, Edinburgh</span>
 
@@ -135,56 +144,43 @@
                 <div class="text-muted text-small mb-2">
                   2020-2021
                 </div>
-                <div>
-                  Fui contratado para poner en marcha un plan de márketing para la
-                  temporada de verano de 2021. Viajé a Edimburgo para informarme del
-                  funcionamiento de la empresa y de sus servicios, e hice un análisis tanto del
-                  mercado como de su posicionamiento. Luego creé una presencia en redes
-                  sociales, y una pequeña campaña de márketing directo.
+                <div alt="I was hired to launch a marketing plan for the summer season of 2021. I traveled to Edinburgh to learn about the company's operations and services, and conducted an analysis of both the market and its positioning. Then, I created a social media presence and a small direct marketing campaign.">
+                  Fui contratado para poner en marcha un plan de márketing para la temporada de verano de 2021. Viajé a Edimburgo para informarme del funcionamiento de la empresa y de sus servicios, e hice un análisis tanto del mercado como de su posicionamiento. Luego creé una presencia en redes sociales, y una pequeña campaña de márketing directo.
                 </div>
               </div>
             </div>
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Wordpress design and maintenance">
                   Diseño y mantenimiento Wordpress.
                   <span class="text-muted h6">Host-Ed Ltd, Edinburgh</span>
                 </div>
                 <div class="text-muted text-small mb-2">
                   2020-2021
                 </div>
-                <div>
-                  Adicionalmente a la campaña de márketing, fui contratado para diseñar y
-                  publicar su sitio web ‐https://host‐ed.co.uk‐
-                </div>
+                <div alt="Additionally to the marketing campaign, I was hired to design and publish their website -https://host-ed.co.uk-">
+                  Adicionalmente a la campaña de márketing, fui contratado para diseñar y publicar su sitio web ‐https://host‐ed.co.uk‐
+                </div>                
               </div>
             </div>
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Customer center design and deployment">
                   Despliegue de centro de atención al cliente.
                   <span class="text-muted h6">Aluni SL, Sevilla</span>
                 </div>
                 <div class="text-muted text-small mb-2">
                   2018-2019
                 </div>
-                <div>
-                  Fui contratado por Aluni, la empresa lider en alojamiento universitario en
-                  España parahacer un analisis de requisitos del servicio de atención al cliente,
-                  identificar las mejoras necesarias, presentar a la dirección ‐y posteriormente
-                  a todo el equipo‐ un modelo del nuevo funcionamiento, reunirme con los
-                  proovedores necesarios y finalmente desplegar el proyecto.
-                  El modelo final se centró en una centralita online por webRTC, lo que
-                  minimizó los costes, redujo las llamadas perdidas a una fracción de las
-                  originales, y permitió a la dirección hacer un seguimiento estadístico, de
-                  cuyo formato también me encargué.
+                <div alt="I was hired by Aluni, the leading company in university accommodation in Spain, to conduct a requirements analysis of the customer service, identify necessary improvements, present a new operating model to the management - and subsequently to the entire team, meet with necessary providers, and finally deploy the project. The final model focused on an online switchboard via webRTC, which minimized costs, reduced lost calls to a fraction of the original, and allowed management to track statistics, for which I was also responsible for the format.">
+                  Fui contratado por Aluni, la empresa líder en alojamiento universitario en España para hacer un análisis de requisitos del servicio de atención al cliente, identificar las mejoras necesarias, presentar a la dirección ‐y posteriormente a todo el equipo‐ un modelo del nuevo funcionamiento, reunirme con los proveedores necesarios y finalmente desplegar el proyecto. El modelo final se centró en una centralita online por webRTC, lo que minimizó los costes, redujo las llamadas perdidas a una fracción de las originales, y permitió a la dirección hacer un seguimiento estadístico, de cuyo formato también me encargué.
                 </div>
               </div>
             </div>
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Customer service coordinator">
                   Coordinador de atención al cliente.
                   <span class="text-muted h6">Aluni SL, Sevilla</span>
 
@@ -192,45 +188,40 @@
                 <div class="text-muted text-small mb-2">
                   2019-2020
                 </div>
-                <div>
-                  Tras desplegar el servicio de atención al cliente, me mantuve como
-                  coordinador del mismo, con un equipo de unos diez gestores, por nueve
-                  meses. Durante ese periodo de tiempo también di formación a mi sucesor.
+                <div alt="After deploying the customer service, I remained as its coordinator, with a team of about ten managers, for nine months. During that time, I also trained my successor.">
+                  Tras desplegar el servicio de atención al cliente, me mantuve como coordinador del mismo, con un equipo de unos diez gestores, por nueve meses. Durante ese periodo de tiempo también di formación a mi sucesor.
                 </div>
               </div>
             </div>
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Community manager and active pricing.">
                   Community manager y active pricing.
-                  <span class="text-muted h6">Host-ed Ltd Edimburgo</span>
+                  <span class="text-muted h6" alt="Host-ed Ltd Edinburgh">Host-ed Ltd Edimburgo</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
                   2016-2018
                 </div>
-                <div>
-                  Mis principales funciones eran el contacto con huéspedes a través de las
-                  plataformas de alquiler ‐booking, airbnb‐ y el Meet and Greet, el trato cara a
-                  cara en el momento del check in.
+                <div alt="My main duties were contacting guests through rental platforms such as booking and Airbnb, and Meet and Greet, face-to-face interaction during check-in.">
+                  Mis principales funciones eran el contacto con huéspedes a través de las plataformas de alquiler ‐booking, airbnb‐ y el Meet and Greet, el trato cara a cara en el momento del check in.
                 </div>
               </div>
             </div>
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Administrative support">
                   Apoyo administrativo.
-                  <span class="text-muted h6">VELUX España, Madrid</span>
+                  <span class="text-muted h6" alt="VELUX Spain, Madrid">VELUX España, Madrid</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
                   2015-2015
                 </div>
-                <div>
-                  Dediqué el verano a administrar una promoción para el usuario final, tanto
-                  en el lado administrativo como en la atención al cliente.
+                <div alt="I spent the summer managing a promotion for end users, both on the administrative side and in customer service.">
+                  Dediqué el verano a administrar una promoción para el usuario final, tanto en el lado administrativo como en la atención al cliente.
                 </div>
               </div>
             </div>
@@ -240,19 +231,19 @@
         <div class="page-break"></div>
 
         <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4">Idiomas</h2>
+          <h2 class="h3 mb-4" alt="Languages">Idiomas</h2>
           <div class="timeline">
 
 
             <div class="timeline-card timeline-card-success card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="English-Spanish bilingual">
                   Bilingüe Español-Inglés
 
 
                 </div>
 
-                <div>
+                <div alt="I have lived for years in the United Kingdom and the United States, I have a TEFL (Teaching English as a Foreign Language) certification, and I generally operate at a bilingual level, both orally and in writing.">
                   He vivido durante años en Reino Unido y Estados Unidos, tengo el título como profesor
                   TEFL
                   (Teaching English as a Foreign Language) y en general opero a nivel bilingüe, tanto de forma oral
@@ -268,24 +259,24 @@
 
 
         <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4">Educación</h2>
+          <h2 class="h3 mb-4" alt="Education">Educación</h2>
           <div class="timeline">
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Web app development degree, average score of 99%">
                   Grado superior de Desarrollo de Aplicaciones Web - Media de sobresaliente -
-                  <span class="text-muted h6">IES Punta del Verde, Sevilla</span>
+                  <span class="text-muted h6" alt="IES Punta del Verde, Seville">IES Punta del Verde, Sevilla</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
                   2020-2022
                 </div>
-                <div>
+                <div alt="I have just finished the second course of the higher degree in web application development, which focuses on the development and management of applications, databases, and websites, and their integration into both business and marketing plans. It includes significant training in programming languages: Java, Python, JavaScript (including TypeScript), PHP, CSS, SCSS, and SQL. I have also practiced with the Angular framework.">
                   Acabo de terminar el segundo curso del grado superior de desarrollo de
                   aplicaciones web, que se centra en el desarollo y manejo de aplicaciones,
                   bases de datos y sitios web, y de su integración tanto en negocios como en
                   planes de márketing. Incluye formación importante en
-                  lenguajes de programación:Java, Phyton,
+                  lenguajes de programación: Java, Phyton,
                   JavaScript (Y TypeScript), PHP, CSS, SCSS y SQL. También he practicado con
                   el framework Angular.
                 </div>
@@ -293,14 +284,14 @@
             </div>
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="TEFL Certificate">
                   Certificado TEFL.
-                  <span class="text-muted h6">Sevilla</span>
+                  <span class="text-muted h6" alt="Seville">Sevilla</span>
                 </div>
                 <div class="text-muted text-small mb-2">
                   2020-2020
                 </div>
-                <div>
+                <div alt="TEFL certificate (Teaching English as a Foreign Language), which qualifies me to teach English classes officially in any language center.">
                   Certificado TEFL (Teaching English as a Foreign Language), que me acredita
                   capacitado para dar clases oficiales de inglés en cualquier centro de idiomas.
                 </div>
@@ -308,14 +299,14 @@
             </div>
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Digital marketing program.">
                   Programa de márketing digital.
-                  <span class="text-muted h6">Universidad de Illinois</span>
+                  <span class="text-muted h6" alt="Illionis university">Universidad de Illinois</span>
                 </div>
                 <div class="text-muted text-small mb-2">
                   2018-2019
                 </div>
-                <div>
+                <div alt="Online specialized course in digital marketing, covering topics such as SEO optimization, social media, and community management.">
                   Curso especializado online de márketing digital, con temas como
                   optimización SEO, redes sociales y community management.
                 </div>
@@ -324,7 +315,7 @@
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">
+                <div class="h5 mb-1" alt="Law degree studies">
                   Estudios de Grado de Derecho.
                   <span class="text-muted h6">Universidad Autónoma de Madrid, Madrid</span>
 
@@ -332,7 +323,7 @@
                 <div class="text-muted text-small mb-2">
                   2012-2015
                 </div>
-                <div>
+                <div alt="Law degree studies up to the third year included">
                   Estudios del grado de derecho hasta el tercer curso, incluido.
                 </div>
               </div>
@@ -348,7 +339,7 @@
                 <div class="text-muted text-small mb-2">
                   2012-2015
                 </div>
-                <div>
+                <div alt="American school in Nevada. County award in creative writing, second place in state debate tournament.">
                   Colegio americano en Nevada. Premio del condado en escritura creativa,
                   segundo lugar en el torneo estatal de debate.
                 </div>
@@ -390,7 +381,7 @@
             </div>
             <div class="col">
               <div class="mt-2">
-                <h3 class="h6">Teléfono</h3>
+                <h3 class="h6" alt="Telephone">Teléfono</h3>
                 <div class="pb-2 text-secondary">+34 622 627 305</div>
                 <h3 class="h6">Email</h3>
                 <div class="pb-2 text-secondary">pedropoolep@gmail.com</div>
@@ -418,6 +409,38 @@
   <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
   <script src="scripts/aos.js?ver=1.2.0"></script>
   <script src="scripts/main.js?ver=1.2.0"></script>
+  <script>
+    let elementos = document.querySelectorAll("p, h1, h2, h3, h4, h5, div");
+
+    function change() {
+      // Al hacerle click, le quitas la clase que tiene opa 1 y le pones la clase que tiene opa 0, y como tiene transition de 1s, pues tarda un seg
+
+      for (let elemento of elementos) {
+          if(elemento.getAttribute("alt")!=null){
+          let time=(Math.random() * (1000));
+          setTimeout(function(){eleChange(elemento)},time)
+          }
+      }
+    }
+
+
+    function eleChange(elemento){
+      elemento.classList.remove("fade-in");
+        elemento.classList.add("fade-out");
+
+        //Un segundo mas tarde
+        setTimeout(() => {
+          //Cambias el texto
+          let temp = elemento.innerHTML;
+          elemento.innerHTML = elemento.getAttribute("alt");
+          elemento.setAttribute("alt", temp);
+
+          //Y vuelves a intercambiar las clases de opacidad
+          elemento.classList.remove("fade-out");
+          elemento.classList.add("fade-in");
+        }, 1000);
+    }
+  </script>
 </body>
 
 </html>

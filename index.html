@@ -66,9 +66,9 @@
                 Desarrollador web
               </p>
               <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="Pedro Poole CV.pdf"
+                <a hrefAlt="Pedro Poole CV English.pdf" alt="Download PDF" id="downloadLink" class="btn btn-light text-dark shadow-sm mt-1 me-1" href="Pedro Poole CV.pdf"
                   target="_blank">Descargar PDF</a>
-                  <a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()">Cambiar Idioma</a>
+                  <a alt="Change Language" class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()">Cambiar Idioma</a>
               </div>
             </div>
           </div>
@@ -77,9 +77,12 @@
           <div class="row">
             <div class="col-md-6">
               <h2 class="h3 mb-3" alt="About me">Sobre mi</h2>
-              <p alt="I am a developer with a particular interest in the DevOps area, in which I am working. I have excellent writing skills in both English and Spanish, and I am familiar with business and marketing concepts and principles. In addition to the degree I have completed, I have additional experience in other IT areas, such as website creation, and generally a lot of practice with various digital tools.">
-                Soy un programador con particular interés en el area de DevOps, en la que estoy trabajando. Tengo una excelente capacidad de redacción tanto en Inglés como en Español, y estoy familiarizado con los conceptos y principios de las empresas y el márketing. Además del grado que he cursado, tengo experiencia adicional en otras áreas informáticas, como la creación de sitios web y, en general, mucha práctica con diversas herramientas digitales.
-              </p>
+              <p alt="I am a skilled web application developer with extensive experience in DevOps, currently part of an international platform team. I
+              have exceptional communication skills in both English and Spanish, and a strong understanding of business and marketing
+              principles. Graduating as the top student in my studies, I also have vast experience successfully managing self-initiated projects,
+              including website development and internal communication improvements.
+              ">
+              Soy un programador con particular interés en el area de DevOps, en la que estoy trabajando. Tengo una excelente capacidad de redacción tanto en Inglés como en Español, y estoy familiarizado con los conceptos y principios de las empresas y el márketing. Además del grado que terminé como el primero de mi promoción, tengo experiencia en el manejo de proyectos desde cero, incluyendo las reuniones con clientes, el análisis de requerimientos, y la formación final a los usuarios.              </p>
             </div>
             <div class="col-md-5 offset-md-1">
               <h2 class="h3 mb-3" alt="Personal details">Datos personales</h2>
@@ -88,7 +91,7 @@
                   <div class="pb-1" alt="Age">Edad</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary" alt="30">30</div>
+                  <div class="pb-1 text-secondary" alt="32">32</div>
                 </div>
                 <div class="col-sm-4">
                   <div class="pb-1" alt="Email">Email</div>
@@ -410,7 +413,7 @@
   <script src="scripts/aos.js?ver=1.2.0"></script>
   <script src="scripts/main.js?ver=1.2.0"></script>
   <script>
-    let elementos = document.querySelectorAll("p, h1, h2, h3, h4, h5, div");
+    let elementos = document.querySelectorAll("p, h1, h2, h3, h4, h5, div, a");
 
     function change() {
       // Al hacerle click, le quitas la clase que tiene opa 1 y le pones la clase que tiene opa 0, y como tiene transition de 1s, pues tarda un seg
@@ -434,6 +437,12 @@
           let temp = elemento.innerHTML;
           elemento.innerHTML = elemento.getAttribute("alt");
           elemento.setAttribute("alt", temp);
+
+          if(elemento.getAttribute("hrefAlt")!=null){
+            let htemp=elemento.href;
+            elemento.href=elemento.getAttribute("hrefAlt");
+            elemento.setAttribute("hrefAlt", htemp);
+          }
 
           //Y vuelves a intercambiar las clases de opacidad
           elemento.classList.remove("fade-out");

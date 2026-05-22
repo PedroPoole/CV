@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title alt="Pedro Poole CV">CV Pedro Poole</title>
+  <title>CV Pedro Poole</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
@@ -16,38 +16,20 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
   </noscript>
-  <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet" />
-  <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet" />
-  <link href="css/aos.css?ver=1.2.0" rel="stylesheet" />
-  <link href="css/main.css?ver=1.2.0" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/aos.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
   <noscript>
     <style type="text/css">
       [data-aos] {
         transform: translate(0) scale(1);
         transition: opacity 1s;
       }
-
-      
-
-
     </style>
   </noscript>
-  <style>
-    h1,h2,h3,h4,h5,div,p
-        {
-        transition: opacity 1s;
-      }
-      .fade-out {
-        opacity: 0;
-      }
-      .fade-in {
-        opacity: 1;
-      }
-  </style>
 </head>
 
 <body id="top">
-
   <div class="page-content">
     <div class="container">
       <div class="cover shadow-lg bg-white">
@@ -55,400 +37,573 @@
           <div class="row">
             <div class="col-lg-4 col-md-5">
               <div class="avatar hover-effect bg-white shadow-sm p-1">
-                <img src="images/avatar.jpg" width="200" height="200" />
+                <img src="images/avatar.jpg" width="200" height="200" alt="Pedro Poole Prieto" />
               </div>
             </div>
             <div class="col-lg-8 col-md-7 text-center text-md-start">
-              <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">
+              <h1 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">
                 Pedro Poole Prieto
-              </h2>
-              <p data-aos="fade-left" data-aos-delay="100" alt="Developer">
-                Desarrollador web
+              </h1>
+              <p data-i18n="heroRole" data-aos="fade-left" data-aos-delay="100">
+                Senior Software Engineer | Arquitectura Java/Spring | IA aplicada | Liderazgo técnico
               </p>
               <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                <a hrefAlt="Pedro Poole CV English.pdf" alt="Download PDF" id="downloadLink" class="btn btn-light text-dark shadow-sm mt-1 me-1" href="Pedro Poole CV.pdf"
-                  target="_blank">Descargar PDF</a>
-                  <a alt="Change Language" class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()">Cambiar Idioma</a>
+                <a id="downloadLink" class="btn btn-light text-dark shadow-sm mt-1 me-1" href="Pedro Poole CV.pdf"
+                  target="_blank" rel="noopener" data-i18n="downloadPdf">Descargar PDF</a>
+                <button class="btn btn-light text-dark shadow-sm mt-1 me-1" type="button" onclick="change()"
+                  data-i18n="changeLanguage">English</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="about-section pt-4 px-3 px-lg-4 mt-1">
+
+        <nav class="profile-nav d-print-none" aria-label="CV sections">
+          <a href="#profile" class="profile-nav-link is-active" data-section="profile" data-i18n="navProfile">Perfil</a>
+          <a href="#experience" class="profile-nav-link" data-section="experience" data-i18n="navExperience">Experiencia</a>
+          <a href="#skills" class="profile-nav-link" data-section="skills" data-i18n="navSkills">Competencias</a>
+          <a href="#education" class="profile-nav-link" data-section="education" data-i18n="navEducation">Educación</a>
+          <a href="#contact" class="profile-nav-link" data-section="contact" data-i18n="navContact">Contacto</a>
+        </nav>
+
+        <div class="about-section pt-4 px-3 px-lg-4 mt-1" id="profile">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="h3 mb-3" alt="About me">Sobre mi</h2>
-              <p alt="I am a skilled web application developer with extensive experience in DevOps, currently part of an international platform team. I
-              have exceptional communication skills in both English and Spanish, and a strong understanding of business and marketing
-              principles. Graduating as the top student in my studies, I also have vast experience successfully managing self-initiated projects,
-              including website development and internal communication improvements.
-              ">
-              Soy un programador con particular interés en el area de DevOps, en la que estoy trabajando. Tengo una excelente capacidad de redacción tanto en Inglés como en Español, y estoy familiarizado con los conceptos y principios de las empresas y el márketing. Además del grado que terminé como el primero de mi promoción, tengo experiencia en el manejo de proyectos desde cero, incluyendo las reuniones con clientes, el análisis de requerimientos, y la formación final a los usuarios.              </p>
+              <h2 class="h3 mb-3" data-i18n="profileTitle">Perfil</h2>
+              <p data-i18n="profileText">
+                Senior Software Engineer con perfil orientado a liderazgo técnico, coordinación de equipos y adaptación a
+                entornos de cambio. Acostumbrado a transformar requisitos ambiguos en planes ejecutables, alinear
+                perfiles técnicos y funcionales, desbloquear decisiones y mantener foco en entrega, calidad y
+                mantenibilidad. Combino criterio arquitectónico, comunicación clara y uso avanzado de IA para acelerar
+                ejecución sin perder control técnico.
+              </p>
             </div>
             <div class="col-md-5 offset-md-1">
-              <h2 class="h3 mb-3" alt="Personal details">Datos personales</h2>
+              <h2 class="h3 mb-3" data-i18n="detailsTitle">Datos personales</h2>
               <div class="row mt-2">
                 <div class="col-sm-4">
-                  <div class="pb-1" alt="Age">Edad</div>
+                  <div class="pb-1" data-i18n="locationLabel">Ubicación</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary" alt="32">32</div>
+                  <div class="pb-1 text-secondary" data-i18n="locationValue">Málaga, España</div>
                 </div>
                 <div class="col-sm-4">
-                  <div class="pb-1" alt="Email">Email</div>
+                  <div class="pb-1" data-i18n="phoneLabel">Teléfono</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary" alt="pedropoolep@gmail.com">pedropoolep@gmail.com</div>
+                  <div class="pb-1 text-secondary">+34 622 627 305</div>
                 </div>
                 <div class="col-sm-4">
-                  <div class="pb-1" alt="Telephone">Teléfono</div>
+                  <div class="pb-1">Email</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary" alt="+34 622 627 305">622 627 305</div>
+                  <div class="pb-1 text-secondary">pedropoolep@gmail.com</div>
                 </div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="d-print-none" />
-
-        <hr class="d-print-none" />
-        <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4" alt="Work experience">Experiencia laboral</h2>
-          <div class="timeline">
-
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="DevOps platform support">
-                  Soporte DevOpsde la Platform.
-                  <span class="text-muted h6" alt="NTT Data, Seville">NTT Data, Sevilla</span>
-
+                <div class="col-sm-4">
+                  <div class="pb-1">Web</div>
                 </div>
-                <div class="text-muted text-small mb-2" alt="2022-Today">
-                  2022-Actualidad
+                <div class="col-sm-8">
+                  <div class="pb-1 text-secondary"><a href="https://www.pedropoole.com" target="_blank" rel="noopener">www.pedropoole.com</a></div>
                 </div>
-                <div alt="As a developer in DevOps, my work focuses on managing the infrastructure of a large multinational company's applications. I work daily with technologies such as Kubernetes, Docker, Kibana, databases, and the entire Java Spring microservices environment.">
-                  Como developer en DevOps, mi trabajo se centra en la gestión de la infraestructura de las aplicaciones de una gran empresa multinacional. Opero a diario con tecnologías como Kubernetes, Docker, Kibana, bases de datos y todo el entorno de microservicios de Java Spring.
+                <div class="col-sm-4">
+                  <div class="pb-1">LinkedIn</div>
                 </div>
-              </div>
-            </div>
-
-
-
-
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Digital marketing consultant">
-                  Consultor de márketing digital.
-                  <span class="text-muted h6">Host-Ed Ltd, Edinburgh</span>
-
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2020-2021
-                </div>
-                <div alt="I was hired to launch a marketing plan for the summer season of 2021. I traveled to Edinburgh to learn about the company's operations and services, and conducted an analysis of both the market and its positioning. Then, I created a social media presence and a small direct marketing campaign.">
-                  Fui contratado para poner en marcha un plan de márketing para la temporada de verano de 2021. Viajé a Edimburgo para informarme del funcionamiento de la empresa y de sus servicios, e hice un análisis tanto del mercado como de su posicionamiento. Luego creé una presencia en redes sociales, y una pequeña campaña de márketing directo.
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Wordpress design and maintenance">
-                  Diseño y mantenimiento Wordpress.
-                  <span class="text-muted h6">Host-Ed Ltd, Edinburgh</span>
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2020-2021
-                </div>
-                <div alt="Additionally to the marketing campaign, I was hired to design and publish their website -https://host-ed.co.uk-">
-                  Adicionalmente a la campaña de márketing, fui contratado para diseñar y publicar su sitio web ‐https://host‐ed.co.uk‐
-                </div>                
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Customer center design and deployment">
-                  Despliegue de centro de atención al cliente.
-                  <span class="text-muted h6">Aluni SL, Sevilla</span>
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2018-2019
-                </div>
-                <div alt="I was hired by Aluni, the leading company in university accommodation in Spain, to conduct a requirements analysis of the customer service, identify necessary improvements, present a new operating model to the management - and subsequently to the entire team, meet with necessary providers, and finally deploy the project. The final model focused on an online switchboard via webRTC, which minimized costs, reduced lost calls to a fraction of the original, and allowed management to track statistics, for which I was also responsible for the format.">
-                  Fui contratado por Aluni, la empresa líder en alojamiento universitario en España para hacer un análisis de requisitos del servicio de atención al cliente, identificar las mejoras necesarias, presentar a la dirección ‐y posteriormente a todo el equipo‐ un modelo del nuevo funcionamiento, reunirme con los proveedores necesarios y finalmente desplegar el proyecto. El modelo final se centró en una centralita online por webRTC, lo que minimizó los costes, redujo las llamadas perdidas a una fracción de las originales, y permitió a la dirección hacer un seguimiento estadístico, de cuyo formato también me encargué.
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Customer service coordinator">
-                  Coordinador de atención al cliente.
-                  <span class="text-muted h6">Aluni SL, Sevilla</span>
-
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2019-2020
-                </div>
-                <div alt="After deploying the customer service, I remained as its coordinator, with a team of about ten managers, for nine months. During that time, I also trained my successor.">
-                  Tras desplegar el servicio de atención al cliente, me mantuve como coordinador del mismo, con un equipo de unos diez gestores, por nueve meses. Durante ese periodo de tiempo también di formación a mi sucesor.
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Community manager and active pricing.">
-                  Community manager y active pricing.
-                  <span class="text-muted h6" alt="Host-ed Ltd Edinburgh">Host-ed Ltd Edimburgo</span>
-
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2016-2018
-                </div>
-                <div alt="My main duties were contacting guests through rental platforms such as booking and Airbnb, and Meet and Greet, face-to-face interaction during check-in.">
-                  Mis principales funciones eran el contacto con huéspedes a través de las plataformas de alquiler ‐booking, airbnb‐ y el Meet and Greet, el trato cara a cara en el momento del check in.
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Administrative support">
-                  Apoyo administrativo.
-                  <span class="text-muted h6" alt="VELUX Spain, Madrid">VELUX España, Madrid</span>
-
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2015-2015
-                </div>
-                <div alt="I spent the summer managing a promotion for end users, both on the administrative side and in customer service.">
-                  Dediqué el verano a administrar una promoción para el usuario final, tanto en el lado administrativo como en la atención al cliente.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="d-print-none" />
-        <div class="page-break"></div>
-
-        <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4" alt="Languages">Idiomas</h2>
-          <div class="timeline">
-
-
-            <div class="timeline-card timeline-card-success card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="English-Spanish bilingual">
-                  Bilingüe Español-Inglés
-
-
-                </div>
-
-                <div alt="I have lived for years in the United Kingdom and the United States, I have a TEFL (Teaching English as a Foreign Language) certification, and I generally operate at a bilingual level, both orally and in writing.">
-                  He vivido durante años en Reino Unido y Estados Unidos, tengo el título como profesor
-                  TEFL
-                  (Teaching English as a Foreign Language) y en general opero a nivel bilingüe, tanto de forma oral
-                  como
-                  escrita.
+                <div class="col-sm-8">
+                  <div class="pb-1 text-secondary"><a href="https://www.linkedin.com/in/pedro-poole-prieto" target="_blank" rel="noopener">linkedin.com/in/pedro-poole-prieto</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+        <hr class="d-print-none" />
 
-
-
-        <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4" alt="Education">Educación</h2>
+        <div class="work-experience-section px-3 px-lg-4" id="experience">
+          <h2 class="h3 mb-4" data-i18n="experienceTitle">Experiencia</h2>
           <div class="timeline">
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1" alt="Web app development degree, average score of 99%">
-                  Grado superior de Desarrollo de Aplicaciones Web - Media de sobresaliente -
-                  <span class="text-muted h6" alt="IES Punta del Verde, Seville">IES Punta del Verde, Sevilla</span>
-
+                <div class="h5 mb-1">
+                  Software Architect &amp; Lead Developer - Inventory Automation Platform
+                  <span class="text-muted h6" data-i18n="easyShopCompany">EasyShop · Autónomo · En remoto</span>
                 </div>
-                <div class="text-muted text-small mb-2">
-                  2020-2022
-                </div>
-                <div alt="I have just finished the second course of the higher degree in web application development, which focuses on the development and management of applications, databases, and websites, and their integration into both business and marketing plans. It includes significant training in programming languages: Java, Python, JavaScript (including TypeScript), PHP, CSS, SCSS, and SQL. I have also practiced with the Angular framework.">
-                  Acabo de terminar el segundo curso del grado superior de desarrollo de
-                  aplicaciones web, que se centra en el desarollo y manejo de aplicaciones,
-                  bases de datos y sitios web, y de su integración tanto en negocios como en
-                  planes de márketing. Incluye formación importante en
-                  lenguajes de programación: Java, Phyton,
-                  JavaScript (Y TypeScript), PHP, CSS, SCSS y SQL. También he practicado con
-                  el framework Angular.
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="TEFL Certificate">
-                  Certificado TEFL.
-                  <span class="text-muted h6" alt="Seville">Sevilla</span>
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2020-2020
-                </div>
-                <div alt="TEFL certificate (Teaching English as a Foreign Language), which qualifies me to teach English classes officially in any language center.">
-                  Certificado TEFL (Teaching English as a Foreign Language), que me acredita
-                  capacitado para dar clases oficiales de inglés en cualquier centro de idiomas.
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Digital marketing program.">
-                  Programa de márketing digital.
-                  <span class="text-muted h6" alt="Illionis university">Universidad de Illinois</span>
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2018-2019
-                </div>
-                <div alt="Online specialized course in digital marketing, covering topics such as SEO optimization, social media, and community management.">
-                  Curso especializado online de márketing digital, con temas como
-                  optimización SEO, redes sociales y community management.
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1" alt="Law degree studies">
-                  Estudios de Grado de Derecho.
-                  <span class="text-muted h6">Universidad Autónoma de Madrid, Madrid</span>
-
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2012-2015
-                </div>
-                <div alt="Law degree studies up to the third year included">
-                  Estudios del grado de derecho hasta el tercer curso, incluido.
-                </div>
+                <div class="text-muted text-small mb-2" data-i18n="easyShopDate">feb. 2026 - actualidad</div>
+                <ul>
+                  <li data-i18n="easyShop1">Diseño end-to-end de plataforma beta de inventario, restock y optimización de rotación.</li>
+                  <li data-i18n="easyShop2">Definición completa de arquitectura, dominios, boundaries, modelo de datos, APIs y reglas de negocio.</li>
+                  <li data-i18n="easyShop3">Uso avanzado de IA generativa para convertir requisitos en código determinista, tests, contratos técnicos y pipelines reproducibles.</li>
+                  <li data-i18n="easyShop4">Scraping, ingesta, normalización, enriquecimiento y matching determinista de catálogos, stock, proveedores, precios y fuentes externas.</li>
+                  <li data-i18n="easyShop5">Mecanismos de decisión para restock, stock mínimo, rotación y priorización de reposición basados en reglas explícitas.</li>
+                </ul>
               </div>
             </div>
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Highschool diploma.
-                  <span class="text-muted h6">Cheyenne High School, North Las Vegas</span>
-
+                  Senior Software Engineer
+                  <span class="text-muted h6" data-i18n="seniorCompany">NTT DATA · Jornada completa</span>
                 </div>
-                <div class="text-muted text-small mb-2">
-                  2012-2015
-                </div>
-                <div alt="American school in Nevada. County award in creative writing, second place in state debate tournament.">
-                  Colegio americano en Nevada. Premio del condado en escritura creativa,
-                  segundo lugar en el torneo estatal de debate.
-                </div>
-
+                <div class="text-muted text-small mb-2" data-i18n="seniorDate">jul. 2025 - actualidad</div>
+                <ul>
+                  <li data-i18n="senior1">Coordinación técnica de aplicaciones críticas de suministro, logística, previsión, inventario, pagos y cobros en energía.</li>
+                  <li data-i18n="senior2">Migración de ~60% de un monolito legacy hacia microservicios con arquitectura hexagonal.</li>
+                  <li data-i18n="senior3">Extracción de ~30 dominios y diseño/implementación de ~500 endpoints, ~60 rutas Camel, ~60 colas Artemis y ~100 batch processes.</li>
+                  <li data-i18n="senior4">Implementación end-to-end para Enagás de una solución de seguridad de suministro: arquitectura, APIs y flujos de datos.</li>
+                  <li data-i18n="senior5">Migración a tecnologías open source para mejorar mantenibilidad, trazabilidad y evolución.</li>
+                  <li data-i18n="senior6">IA aplicada a desarrollo y operación: software determinista, flujos agénticos y aplicación interna de auto-resolución de incidencias.</li>
+                  <li data-i18n="senior7">Tooling interno de generación de código; mejora de eficiencia de un equipo de 10 desarrolladores entre 30% y 40%.</li>
+                  <li data-i18n="senior8">Onboarding, mentoring y supervisión técnica de perfiles junior y senior.</li>
+                </ul>
               </div>
             </div>
 
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1">
+                  Developer
+                  <span class="text-muted h6">NTT DATA</span>
+                </div>
+                <div class="text-muted text-small mb-2" data-i18n="developerDate">nov. 2023 - jun. 2025 · 1 año 8 meses</div>
+                <ul>
+                  <li data-i18n="developer1">Gestión de infraestructura e integración de aplicaciones Enel y de terceros.</li>
+                  <li data-i18n="developer2">Uso avanzado de Kubernetes, Docker, Kibana, SQL/NoSQL y Spring.</li>
+                  <li data-i18n="developer3">Soporte técnico internacional en español e inglés; supervisión de CI/CD basado en DDD.</li>
+                  <li data-i18n="developer4">Aplicaciones de supervisión que agilizaron procesos del equipo entre 20% y 30%.</li>
+                </ul>
+              </div>
+            </div>
 
-
-
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1">
+                  Junior Developer
+                  <span class="text-muted h6" data-i18n="juniorCompany">NTT DATA · Jornada completa · Sevilla · Híbrido</span>
+                </div>
+                <div class="text-muted text-small mb-2" data-i18n="juniorDate">nov. 2022 - oct. 2023</div>
+              </div>
+            </div>
           </div>
         </div>
 
         <hr class="d-print-none" />
+
+        <div class="skills-section px-3 px-lg-4" id="skills">
+          <h2 class="h3 mb-4" data-i18n="skillsTitle">Competencias</h2>
+          <div class="skills-grid">
+            <button class="skill-group" type="button" data-skill-card>
+              <h3 data-i18n="architectureLabel">Arquitectura</h3>
+              <p data-i18n="architectureSkills">Microservicios, arquitectura hexagonal, DDD, APIs, boundaries, sistemas distribuidos, flujos de datos.</p>
+            </button>
+            <button class="skill-group" type="button" data-skill-card>
+              <h3 data-i18n="backendLabel">Backend/integración</h3>
+              <p data-i18n="backendSkills">Java 21, Spring Framework, Apache Camel, Apache ActiveMQ Artemis, PostgreSQL, SQL, NoSQL, batch.</p>
+            </button>
+            <button class="skill-group" type="button" data-skill-card>
+              <h3 data-i18n="aiLabel">IA aplicada</h3>
+              <p data-i18n="aiSkills">IA generativa, software determinista, prompts técnicos, contratos técnicos, flujos agénticos, automatización de incidencias.</p>
+            </button>
+            <button class="skill-group" type="button" data-skill-card>
+              <h3 data-i18n="devopsLabel">DevOps/operación</h3>
+              <p data-i18n="devopsSkills">Kubernetes, Docker, Kibana, CI/CD, observabilidad, integración corporativa.</p>
+            </button>
+            <button class="skill-group" type="button" data-skill-card>
+              <h3 data-i18n="leadershipLabel">Liderazgo</h3>
+              <p data-i18n="leadershipSkills">Coordinación técnica, mentoring, onboarding, supervisión de equipos, soporte internacional.</p>
+            </button>
+          </div>
+        </div>
+
+        <hr class="d-print-none" />
+
+        <div class="education-section px-3 px-lg-4 pb-4" id="education">
+          <h2 class="h3 mb-4" data-i18n="educationTitle">Educación e idiomas</h2>
+          <div class="timeline">
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1" data-i18n="education1Title">
+                  Grado superior en Desarrollo de Aplicaciones Web
+                  <span class="text-muted h6">IES Punta del Verde, Sevilla</span>
+                </div>
+                <div class="text-muted text-small mb-2">2020 - 2022</div>
+                <div data-i18n="education1Text">Media de sobresaliente; primero de la promoción.</div>
+              </div>
+            </div>
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1" data-i18n="education2Title">
+                  Certificado TEFL
+                  <span class="text-muted h6">Sevilla</span>
+                </div>
+                <div class="text-muted text-small mb-2">2020</div>
+              </div>
+            </div>
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1" data-i18n="education3Title">
+                  Programa de marketing digital
+                  <span class="text-muted h6" data-i18n="illinois">Universidad de Illinois</span>
+                </div>
+                <div class="text-muted text-small mb-2">2018 - 2019</div>
+              </div>
+            </div>
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1" data-i18n="education4Title">
+                  Estudios de Grado de Derecho
+                  <span class="text-muted h6" data-i18n="uam">Universidad Autónoma de Madrid</span>
+                </div>
+                <div class="text-muted text-small mb-2">2012 - 2015</div>
+              </div>
+            </div>
+            <div class="timeline-card timeline-card-success card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1" data-i18n="languagesTitle">Español e inglés bilingüe</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="d-print-none" />
+
         <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
-          <h2 class="h3 text mb-3">Contacto</h2>
+          <h2 class="h3 text mb-3" data-i18n="contactTitle">Contacto</h2>
           <div class="row">
             <div class="col-md-7 d-print-none">
               <div class="my-2">
                 <form action="https://formspree.io/f/mnqrnavy" method="POST">
                   <div class="row">
                     <div class="col-6">
-                      <input class="form-control" type="text" id="name" name="name" placeholder="Tu nombre" required />
+                      <input class="form-control" type="text" id="name" name="name" placeholder="Tu nombre"
+                        data-placeholder-es="Tu nombre" data-placeholder-en="Your name" required />
                     </div>
                     <div class="col-6">
-                      <input class="form-control" type="email" id="email" name="_replyto" placeholder="Tu E-mail"
-                        required />
+                      <input class="form-control" type="email" id="email" name="_replyto" placeholder="Tu email"
+                        data-placeholder-es="Tu email" data-placeholder-en="Your email" required />
                     </div>
                   </div>
                   <div class="form-group my-2">
                     <textarea class="form-control" style="resize: none" id="message" name="message" rows="4"
-                      placeholder="Your Message" required></textarea>
+                      placeholder="Tu mensaje" data-placeholder-es="Tu mensaje" data-placeholder-en="Your message"
+                      required></textarea>
                   </div>
-                  <button class="btn btn-primary mt-2" type="submit">
-                    Enviar
-                  </button>
+                  <button class="btn btn-primary mt-2" type="submit" data-i18n="sendButton">Enviar</button>
                 </form>
               </div>
             </div>
             <div class="col">
               <div class="mt-2">
-                <h3 class="h6" alt="Telephone">Teléfono</h3>
+                <h3 class="h6" data-i18n="phoneLabel">Teléfono</h3>
                 <div class="pb-2 text-secondary">+34 622 627 305</div>
                 <h3 class="h6">Email</h3>
                 <div class="pb-2 text-secondary">pedropoolep@gmail.com</div>
+                <h3 class="h6">Web</h3>
+                <div class="pb-2 text-secondary"><a href="https://www.pedropoole.com" target="_blank" rel="noopener">www.pedropoole.com</a></div>
+                <h3 class="h6">LinkedIn</h3>
+                <div class="pb-2 text-secondary"><a href="https://www.linkedin.com/in/pedro-poole-prieto" target="_blank" rel="noopener">linkedin.com/in/pedro-poole-prieto</a></div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
-
-
     </div>
   </div>
+
   <footer class="pt-4 pb-4 text-muted text-center d-print-none">
     <div class="container">
       <div class="my-3">
         <div class="h4">Pedro Poole</div>
-
       </div>
-
-
     </div>
   </footer>
-  <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-  <script src="scripts/aos.js?ver=1.2.0"></script>
-  <script src="scripts/main.js?ver=1.2.0"></script>
+
+  <button class="back-to-top d-print-none" type="button" aria-label="Back to top">↑</button>
+
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/aos.js"></script>
+  <script src="scripts/main.js"></script>
   <script>
-    let elementos = document.querySelectorAll("p, h1, h2, h3, h4, h5, div, a");
+    const translations = {
+      es: {
+        heroRole: "Senior Software Engineer | Arquitectura Java/Spring | IA aplicada | Liderazgo técnico",
+        navProfile: "Perfil",
+        navExperience: "Experiencia",
+        navSkills: "Competencias",
+        navEducation: "Educación",
+        navContact: "Contacto",
+        downloadPdf: "Descargar PDF",
+        changeLanguage: "English",
+        showDetails: "Ver detalles",
+        hideDetails: "Ocultar detalles",
+        profileTitle: "Perfil",
+        profileText: "Senior Software Engineer con perfil orientado a liderazgo técnico, coordinación de equipos y adaptación a entornos de cambio. Acostumbrado a transformar requisitos ambiguos en planes ejecutables, alinear perfiles técnicos y funcionales, desbloquear decisiones y mantener foco en entrega, calidad y mantenibilidad. Combino criterio arquitectónico, comunicación clara y uso avanzado de IA para acelerar ejecución sin perder control técnico.",
+        detailsTitle: "Datos personales",
+        locationLabel: "Ubicación",
+        locationValue: "Málaga, España",
+        phoneLabel: "Teléfono",
+        experienceTitle: "Experiencia",
+        easyShopCompany: "EasyShop · Autónomo · En remoto",
+        easyShopDate: "feb. 2026 - actualidad",
+        easyShop1: "Diseño end-to-end de plataforma beta de inventario, restock y optimización de rotación.",
+        easyShop2: "Definición completa de arquitectura, dominios, boundaries, modelo de datos, APIs y reglas de negocio.",
+        easyShop3: "Uso avanzado de IA generativa para convertir requisitos en código determinista, tests, contratos técnicos y pipelines reproducibles.",
+        easyShop4: "Scraping, ingesta, normalización, enriquecimiento y matching determinista de catálogos, stock, proveedores, precios y fuentes externas.",
+        easyShop5: "Mecanismos de decisión para restock, stock mínimo, rotación y priorización de reposición basados en reglas explícitas.",
+        seniorCompany: "NTT DATA · Jornada completa",
+        seniorDate: "jul. 2025 - actualidad",
+        senior1: "Coordinación técnica de aplicaciones críticas de suministro, logística, previsión, inventario, pagos y cobros en energía.",
+        senior2: "Migración de ~60% de un monolito legacy hacia microservicios con arquitectura hexagonal.",
+        senior3: "Extracción de ~30 dominios y diseño/implementación de ~500 endpoints, ~60 rutas Camel, ~60 colas Artemis y ~100 batch processes.",
+        senior4: "Implementación end-to-end para Enagás de una solución de seguridad de suministro: arquitectura, APIs y flujos de datos.",
+        senior5: "Migración a tecnologías open source para mejorar mantenibilidad, trazabilidad y evolución.",
+        senior6: "IA aplicada a desarrollo y operación: software determinista, flujos agénticos y aplicación interna de auto-resolución de incidencias.",
+        senior7: "Tooling interno de generación de código; mejora de eficiencia de un equipo de 10 desarrolladores entre 30% y 40%.",
+        senior8: "Onboarding, mentoring y supervisión técnica de perfiles junior y senior.",
+        developerDate: "nov. 2023 - jun. 2025 · 1 año 8 meses",
+        developer1: "Gestión de infraestructura e integración de aplicaciones Enel y de terceros.",
+        developer2: "Uso avanzado de Kubernetes, Docker, Kibana, SQL/NoSQL y Spring.",
+        developer3: "Soporte técnico internacional en español e inglés; supervisión de CI/CD basado en DDD.",
+        developer4: "Aplicaciones de supervisión que agilizaron procesos del equipo entre 20% y 30%.",
+        juniorCompany: "NTT DATA · Jornada completa · Sevilla · Híbrido",
+        juniorDate: "nov. 2022 - oct. 2023",
+        skillsTitle: "Competencias",
+        architectureLabel: "Arquitectura",
+        architectureSkills: "Microservicios, arquitectura hexagonal, DDD, APIs, boundaries, sistemas distribuidos, flujos de datos.",
+        backendLabel: "Backend/integración",
+        backendSkills: "Java 21, Spring Framework, Apache Camel, Apache ActiveMQ Artemis, PostgreSQL, SQL, NoSQL, batch.",
+        aiLabel: "IA aplicada",
+        aiSkills: "IA generativa, software determinista, prompts técnicos, contratos técnicos, flujos agénticos, automatización de incidencias.",
+        devopsLabel: "DevOps/operación",
+        devopsSkills: "Kubernetes, Docker, Kibana, CI/CD, observabilidad, integración corporativa.",
+        leadershipLabel: "Liderazgo",
+        leadershipSkills: "Coordinación técnica, mentoring, onboarding, supervisión de equipos, soporte internacional.",
+        educationTitle: "Educación e idiomas",
+        education1Title: "Grado superior en Desarrollo de Aplicaciones Web <span class=\"text-muted h6\">IES Punta del Verde, Sevilla</span>",
+        education1Text: "Media de sobresaliente; primero de la promoción.",
+        education2Title: "Certificado TEFL <span class=\"text-muted h6\">Sevilla</span>",
+        education3Title: "Programa de marketing digital <span class=\"text-muted h6\">Universidad de Illinois</span>",
+        education4Title: "Estudios de Grado de Derecho <span class=\"text-muted h6\">Universidad Autónoma de Madrid</span>",
+        illinois: "Universidad de Illinois",
+        uam: "Universidad Autónoma de Madrid",
+        languagesTitle: "Español e inglés bilingüe",
+        contactTitle: "Contacto",
+        sendButton: "Enviar"
+      },
+      en: {
+        heroRole: "Senior Software Engineer | Java/Spring Architecture | Applied AI | Technical Leadership",
+        navProfile: "Profile",
+        navExperience: "Experience",
+        navSkills: "Skills",
+        navEducation: "Education",
+        navContact: "Contact",
+        downloadPdf: "Download PDF",
+        changeLanguage: "Español",
+        showDetails: "Show details",
+        hideDetails: "Hide details",
+        profileTitle: "Profile",
+        profileText: "Senior Software Engineer oriented toward technical leadership, team coordination and adaptability in changing environments. Used to turning ambiguous requirements into executable plans, aligning technical and functional stakeholders, unblocking decisions and keeping delivery, quality and maintainability in focus. I combine architectural judgment, clear communication and advanced AI usage to accelerate execution without losing technical control.",
+        detailsTitle: "Personal details",
+        locationLabel: "Location",
+        locationValue: "Malaga, Spain",
+        phoneLabel: "Telephone",
+        experienceTitle: "Experience",
+        easyShopCompany: "EasyShop · Self-employed · Remote",
+        easyShopDate: "Feb. 2026 - Present",
+        easyShop1: "End-to-end design of a beta platform for inventory control, restock automation and product rotation optimization.",
+        easyShop2: "Full architecture ownership: domains, boundaries, data model, APIs, information flows and business rules.",
+        easyShop3: "Advanced generative AI use to turn requirements into deterministic code, tests, technical contracts and reproducible pipelines.",
+        easyShop4: "Scraping, ingestion, normalization, enrichment and deterministic matching of catalogs, stock, suppliers, prices and external sources.",
+        easyShop5: "Decision mechanisms for restock, minimum stock, rotation and replenishment prioritization based on explicit rules.",
+        seniorCompany: "NTT DATA · Full-time",
+        seniorDate: "Jul. 2025 - Present",
+        senior1: "Technical coordination of critical energy-sector applications for supply, logistics, forecasting, inventory, payments and collections.",
+        senior2: "Migrated ~60% of a legacy monolith toward microservices using hexagonal architecture.",
+        senior3: "Extracted ~30 domains and designed/implemented ~500 endpoints, ~60 Camel routes, ~60 Artemis queues and ~100 batch processes.",
+        senior4: "End-to-end implementation for Enagás of a supply security management solution: architecture, APIs and data flows.",
+        senior5: "Migration to open-source technologies to improve maintainability, traceability and evolution capacity.",
+        senior6: "Applied AI for development and operations: deterministic software, agentic workflows and internal incident self-resolution application.",
+        senior7: "Internal code-generation tooling; improved efficiency of a 10-developer team by 30% to 40%.",
+        senior8: "Onboarding, mentoring and technical supervision of junior and senior developers.",
+        developerDate: "Nov. 2023 - Jun. 2025 · 1 year 8 months",
+        developer1: "Managed infrastructure and integration for Enel and third-party applications.",
+        developer2: "Advanced use of Kubernetes, Docker, Kibana, SQL/NoSQL and Spring.",
+        developer3: "International technical support in Spanish and English; supervision of CI/CD based on DDD.",
+        developer4: "Built supervision applications that accelerated team processes by 20% to 30%.",
+        juniorCompany: "NTT DATA · Full-time · Seville · Hybrid",
+        juniorDate: "Nov. 2022 - Oct. 2023",
+        skillsTitle: "Skills",
+        architectureLabel: "Architecture",
+        architectureSkills: "Microservices, hexagonal architecture, DDD, APIs, boundaries, distributed systems, data flows.",
+        backendLabel: "Backend/integration",
+        backendSkills: "Java 21, Spring Framework, Apache Camel, Apache ActiveMQ Artemis, PostgreSQL, SQL, NoSQL, batch.",
+        aiLabel: "Applied AI",
+        aiSkills: "Generative AI, deterministic software, technical prompts, technical contracts, agentic workflows, incident automation.",
+        devopsLabel: "DevOps/operations",
+        devopsSkills: "Kubernetes, Docker, Kibana, CI/CD, observability, corporate integration.",
+        leadershipLabel: "Leadership",
+        leadershipSkills: "Technical coordination, mentoring, onboarding, team supervision, international support.",
+        educationTitle: "Education and languages",
+        education1Title: "Higher Degree in Web Application Development <span class=\"text-muted h6\">IES Punta del Verde, Seville</span>",
+        education1Text: "Outstanding average grade; top of the class.",
+        education2Title: "TEFL Certificate <span class=\"text-muted h6\">Seville</span>",
+        education3Title: "Digital Marketing Program <span class=\"text-muted h6\">University of Illinois</span>",
+        education4Title: "Law Degree studies <span class=\"text-muted h6\">Autonomous University of Madrid</span>",
+        illinois: "University of Illinois",
+        uam: "Autonomous University of Madrid",
+        languagesTitle: "Bilingual Spanish and English",
+        contactTitle: "Contact",
+        sendButton: "Send"
+      }
+    };
+
+    let currentLanguage = "es";
+
+    function applyLanguage(language) {
+      currentLanguage = language;
+      document.documentElement.lang = language;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (!translations[language][key]) {
+          return;
+        }
+
+        const delay = Math.random() * 1000;
+        setTimeout(() => {
+          element.classList.remove("fade-in");
+          element.classList.add("fade-out");
+
+          setTimeout(() => {
+            element.innerHTML = translations[language][key];
+            element.classList.remove("fade-out");
+            element.classList.add("fade-in");
+          }, 1000);
+        }, delay);
+      });
+
+      document.querySelectorAll("[data-placeholder-es]").forEach((element) => {
+        element.placeholder = element.getAttribute(`data-placeholder-${language}`);
+      });
+
+      document.getElementById("downloadLink").href = language === "es"
+        ? "Pedro Poole CV.pdf"
+        : "Pedro Poole CV English.pdf";
+
+      updateExpandableLabels();
+    }
 
     function change() {
-      // Al hacerle click, le quitas la clase que tiene opa 1 y le pones la clase que tiene opa 0, y como tiene transition de 1s, pues tarda un seg
+      applyLanguage(currentLanguage === "es" ? "en" : "es");
+    }
 
-      for (let elemento of elementos) {
-          if(elemento.getAttribute("alt")!=null){
-          let time=(Math.random() * (1000));
-          setTimeout(function(){eleChange(elemento)},time)
-          }
+    function updateExpandableLabels() {
+      document.querySelectorAll("[data-expand-card]").forEach((button) => {
+        const card = button.closest(".timeline-card");
+        const isExpanded = !card.classList.contains("is-collapsed");
+        button.textContent = isExpanded
+          ? translations[currentLanguage].hideDetails
+          : translations[currentLanguage].showDetails;
+        button.setAttribute("aria-expanded", String(isExpanded));
+      });
+    }
+
+    const phoneQuery = window.matchMedia("(max-width: 767.98px)");
+    let interactiveProfileReady = false;
+
+    function setPhoneInteractionState() {
+      const isPhone = phoneQuery.matches;
+
+      document.querySelectorAll("#experience .timeline-card").forEach((card, index) => {
+        card.classList.toggle("is-collapsed", isPhone && index > 0 && card.querySelector("ul"));
+      });
+
+      document.querySelectorAll("[data-skill-card]").forEach((card) => {
+        card.classList.remove("is-focused", "is-dimmed");
+        card.tabIndex = isPhone ? 0 : -1;
+      });
+
+      updateExpandableLabels();
+    }
+
+    function setupInteractiveProfile() {
+      if (interactiveProfileReady) {
+        setPhoneInteractionState();
+        return;
       }
-    }
 
+      interactiveProfileReady = true;
 
-    function eleChange(elemento){
-      elemento.classList.remove("fade-in");
-        elemento.classList.add("fade-out");
+      document.querySelectorAll("#experience .timeline-card").forEach((card, index) => {
+        const details = card.querySelector("ul");
+        const date = card.querySelector(".text-small");
+        if (!details || !date) {
+          return;
+        }
 
-        //Un segundo mas tarde
-        setTimeout(() => {
-          //Cambias el texto
-          let temp = elemento.innerHTML;
-          elemento.innerHTML = elemento.getAttribute("alt");
-          elemento.setAttribute("alt", temp);
-
-          if(elemento.getAttribute("hrefAlt")!=null){
-            let htemp=elemento.href;
-            elemento.href=elemento.getAttribute("hrefAlt");
-            elemento.setAttribute("hrefAlt", htemp);
+        const button = document.createElement("button");
+        const detailsId = `experience-details-${index + 1}`;
+        details.id = detailsId;
+        button.type = "button";
+        button.className = "details-toggle d-print-none";
+        button.setAttribute("data-expand-card", "");
+        button.setAttribute("aria-controls", detailsId);
+        button.addEventListener("click", () => {
+          if (!phoneQuery.matches) {
+            return;
           }
+          card.classList.toggle("is-collapsed");
+          updateExpandableLabels();
+        });
+        date.insertAdjacentElement("afterend", button);
+      });
 
-          //Y vuelves a intercambiar las clases de opacidad
-          elemento.classList.remove("fade-out");
-          elemento.classList.add("fade-in");
-        }, 1000);
+      document.querySelectorAll("[data-skill-card]").forEach((card) => {
+        card.addEventListener("click", () => {
+          if (!phoneQuery.matches) {
+            return;
+          }
+          const isActive = card.classList.contains("is-focused");
+          document.querySelectorAll("[data-skill-card]").forEach((item) => {
+            item.classList.toggle("is-dimmed", !isActive && item !== card);
+            item.classList.remove("is-focused");
+          });
+          if (!isActive) {
+            card.classList.add("is-focused");
+          }
+        });
+      });
+
+      const navLinks = document.querySelectorAll(".profile-nav-link");
+      const sections = document.querySelectorAll("#profile, #experience, #skills, #education, #contact");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          navLinks.forEach((link) => {
+            link.classList.toggle("is-active", link.getAttribute("data-section") === entry.target.id);
+          });
+        });
+      }, { rootMargin: "-30% 0px -55% 0px", threshold: 0.01 });
+      sections.forEach((section) => observer.observe(section));
+
+      const backToTop = document.querySelector(".back-to-top");
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      window.addEventListener("scroll", () => {
+        backToTop.classList.toggle("is-visible", phoneQuery.matches && window.scrollY > 520);
+      }, { passive: true });
+
+      if (phoneQuery.addEventListener) {
+        phoneQuery.addEventListener("change", setPhoneInteractionState);
+      } else {
+        phoneQuery.addListener(setPhoneInteractionState);
+      }
+
+      setPhoneInteractionState();
     }
+
+    setupInteractiveProfile();
   </script>
 </body>
 
